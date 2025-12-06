@@ -1,0 +1,78 @@
+{
+  "name": "register",
+  "html": {
+    "required": [
+      "form",
+      "input[type=email]",
+      "input[type=password]",
+      "input[type=text]"
+    ],
+    "optional": [
+      "input[name*=username]",
+      "input[id*=username]",
+      "input[name*=signup]",
+      "input[id*=signup]",
+      "button[type=submit]",
+      "input[type=submit]",
+      "div[class*=register]",
+      "section[class*=register]",
+      "fieldset",
+      "label[for*=email]",
+      "label[for*=user]",
+      "label[for*=password]",
+      "h1",
+      "h2",
+      "div[class*=form]",
+      "form[class*=register]"
+    ],
+    "forbidden": [
+      "form[action*=login]",
+      "input[name*=login]",
+      "div[class*=login]",
+      "section[class*=login]"
+    ]
+  },
+  "text": {
+    "required": [
+      "sign up",
+      "signup",
+      "sign-up",
+      "create account",
+      "create your account",
+      "create new account",
+      "register",
+      "join now",
+      "start free trial",
+      "get started",
+      "email",
+      "username",
+      "password",
+      "enter password"
+    ],
+    "optional": [
+      "confirm password",
+      "password confirmation",
+      "account",
+      "welcome",
+      "start your journey",
+      "create profile",
+      "apply now",
+      "start trial",
+      "begin registration",
+      "join us",
+      "register now"
+    ],
+    "forbidden": []
+  },
+  "logic": {
+    "min_required_matches": 2,
+    "min_total_score": 20
+  },
+  "scoring": {
+    "html_required": 8,
+    "html_optional": 4,
+    "text_required": 6,
+    "text_optional": 2,
+    "forbidden_penalty": -10
+  }
+}

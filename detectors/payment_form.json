@@ -1,0 +1,96 @@
+{
+  "name": "payment_form",
+  "html": {
+    "required": [
+      "form",
+      "input[type=text]",
+      "input[type=tel]",
+      "input[type=number]",
+      "input[name*=card]",
+      "input[id*=card]",
+      "input[name*=cc]",
+      "input[id*=cc]",
+      "input[name*=cvv]",
+      "input[id*=cvv]",
+      "input[name*=expiry]",
+      "input[id*=expiry]",
+      "button[type=submit]",
+      "input[type=submit]"
+    ],
+    "optional": [
+      "input[name*=name]",
+      "input[id*=name]",
+      "input[name*=email]",
+      "input[id*=email]",
+      "select[name*=month]",
+      "select[name*=year]",
+      "div[class*=payment]",
+      "div[class*=checkout]",
+      "div[class*=billing]",
+      "section[class*=payment]",
+      "section[class*=checkout]",
+      "section[class*=billing]",
+      "fieldset",
+      "label[for*=card]",
+      "label[for*=cvv]",
+      "label[for*=expiry]",
+      "label[for*=name]"
+    ],
+    "forbidden": [
+      "input[type=password]",
+      "form[action*=login]",
+      "form[action*=register]",
+      "div[class*=login]",
+      "section[class*=login]",
+      "div[class*=signup]",
+      "section[class*=signup]"
+    ]
+  },
+  "text": {
+    "required": [
+      "payment",
+      "checkout",
+      "billing",
+      "credit card",
+      "card number",
+      "expiry",
+      "cvv",
+      "security code",
+      "name on card",
+      "pay now",
+      "submit payment",
+      "payment information",
+      "card details",
+      "total amount"
+    ],
+    "optional": [
+      "email address",
+      "phone number",
+      "street address",
+      "zip code",
+      "country",
+      "city",
+      "state",
+      "payment method",
+      "paypal",
+      "stripe",
+      "visa",
+      "mastercard",
+      "american express",
+      "discover"
+    ],
+    "forbidden": [
+      "forgot password"    ]
+  },
+  "logic": {
+    "min_required_matches": 3,
+    "min_total_score": 15
+  },
+  "scoring": {
+    "html_required": 6,
+    "html_optional": 2,
+    "text_required": 5,
+    "text_optional": 2,
+    "forbidden_penalty": -10
+  }
+}

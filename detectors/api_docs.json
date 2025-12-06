@@ -1,0 +1,82 @@
+{
+  "name": "api_docs_keywords",
+  "html": {
+    "required": [],
+    "optional": [],
+    "forbidden": []
+  },
+  "text": {
+    "required": [
+      "api",
+      "endpoint",
+      "request",
+      "response",
+      "authentication",
+      "token",
+      "curl",
+      "json",
+      "http",
+      "method",
+      "get",
+      "post",
+      "put",
+      "delete",
+      "parameters",
+      "body",
+      "header",
+      "swagger",
+      "redoc",
+      "apiary",
+      "opblock",
+      "response codes",
+      "example request",
+      "example response",
+      "try it",
+      "api key",
+      "authorization",
+      "request body",
+      "response example",
+      "client library",
+      "schema",
+      "status code",
+      "error codes",
+      "pagination",
+      "description",
+      "endpoint description"
+    ],
+    "optional": [
+      "response body",
+      "request example",
+      "request headers",
+      "response headers",
+      "query parameters",
+      "path parameters",
+      "form data",
+      "json payload",
+      "curl command",
+      "authorization header",
+      "bearer token",
+      "content type",
+      "api version",
+      "rate limit",
+      "request format",
+      "response format",
+      "response message",
+      "request method",
+      "endpoint url",
+      "try endpoint"
+    ],
+    "forbidden": []
+  },
+  "logic": {
+    "min_required_matches": 3,
+    "min_total_score": 10
+  },
+  "scoring": {
+    "html_required": 0,
+    "html_optional": 0,
+    "text_required": 5,
+    "text_optional": 2,
+    "forbidden_penalty": 0
+  }
+}

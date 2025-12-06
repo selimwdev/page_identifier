@@ -1,0 +1,92 @@
+{
+  "name": "feedback_form",
+  "html": {
+    "required": [
+      "form",
+      "textarea",
+      "input[type=text]",
+      "input[type=email]",
+      "button[type=submit]",
+      "input[type=submit]"
+    ],
+    "optional": [
+      "input[name*=name]",
+      "input[id*=name]",
+      "input[name*=email]",
+      "input[id*=email]",
+      "input[name*=rating]",
+      "input[id*=rating]",
+      "select[name*=rating]",
+      "select[id*=rating]",
+      "div[class*=feedback]",
+      "div[class*=review]",
+      "div[class*=comment]",
+      "section[class*=feedback]",
+      "section[class*=review]",
+      "section[class*=comment]",
+      "fieldset",
+      "label[for*=feedback]",
+      "label[for*=review]",
+      "label[for*=comment]"
+    ],
+    "forbidden": [
+      "input[type=password]",
+      "form[action*=login]",
+      "form[action*=register]",
+      "div[class*=login]",
+      "section[class*=login]",
+      "div[class*=signup]",
+      "section[class*=signup]"
+    ]
+  },
+  "text": {
+    "required": [
+      "feedback",
+      "review",
+      "comment",
+      "rating",
+      "submit review",
+      "submit feedback",
+      "leave a comment",
+      "your feedback",
+      "your review",
+      "write a review",
+      "write a comment",
+      "share your opinion"
+    ],
+    "optional": [
+      "star rating",
+      "1 star",
+      "2 stars",
+      "3 stars",
+      "4 stars",
+      "5 stars",
+      "your experience",
+      "suggestions",
+      "thoughts",
+      "improvements",
+      "rate this product",
+      "rate this service"
+    ],
+    "forbidden": [
+      "login",
+      "sign in",
+      "register",
+      "signup",
+      "forgot password",
+      "payment",
+      "checkout"
+    ]
+  },
+  "logic": {
+    "min_required_matches": 3,
+    "min_total_score": 15
+  },
+  "scoring": {
+    "html_required": 6,
+    "html_optional": 2,
+    "text_required": 5,
+    "text_optional": 2,
+    "forbidden_penalty": -10
+  }
+}

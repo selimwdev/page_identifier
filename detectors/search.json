@@ -1,0 +1,52 @@
+{
+  "name": "search_page",
+  "html": {
+    "required": [
+      "input[type=search]"
+    ],
+    "optional": [
+      "input[placeholder*=search i]",
+      "input[placeholder*=find i]",
+      "[aria-label*=search i]",
+      "[role=search]",
+      "button[type=submit]",
+      "input[name*=search]",
+      "input[id*=search]",
+      "input[name*=q]",
+      "input[id*=q]",
+      "[data-testid*=search]",
+      "[data-testid*=search-form]"
+    ],
+    "forbidden": []
+  },
+  "text": {
+    "required": [
+      "search",
+      "find",
+      "lookup",
+      "query"
+    ],
+    "optional": [
+      "search results",
+      "search for",
+      "type to search",
+      "search here",
+      "search now",
+      "search box",
+      "search field",
+      "start searching"
+    ],
+    "forbidden": []
+  },
+  "logic": {
+    "min_required_matches": 1,
+    "min_total_score": 1   
+  },
+  "scoring": {
+    "html_required": 8,
+    "html_optional": 3,
+    "text_required": 4,
+    "text_optional": 1,
+    "forbidden_penalty": 0
+  }
+}

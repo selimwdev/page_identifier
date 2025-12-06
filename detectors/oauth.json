@@ -1,0 +1,76 @@
+{
+  "name": "oauth_login",
+  "html": {
+    "required": [
+      "form",
+      "button",
+      "a[href*=oauth]",
+      "a[href*=login]",
+      "a[href*=signin]",
+      "div[class*=oauth]",
+      "div[class*=social-login]",
+      "section[class*=oauth]",
+      "section[class*=social-login]"
+    ],
+    "optional": [
+      "button[class*=oauth]",
+      "button[class*=social-login]",
+      "a[href*=google]",
+      "a[href*=facebook]",
+      "a[href*=github]",
+      "a[href*=linkedin]",
+      "div[class*=google]",
+      "div[class*=facebook]",
+      "div[class*=github]",
+      "div[class*=linkedin]",
+      "span[class*=oauth]",
+      "span[class*=social-login]",
+      "label[for*=oauth]",
+      "label[for*=social-login]"
+    ],
+    "forbidden": [
+    ]
+  },
+  "text": {
+    "required": [
+      "oauth",
+      "google login",
+      "google signin",
+      "facebook login",
+      "facebook signin",
+      "github login",
+      "github signin",
+      "linkedin login",
+      "linkedin signin",
+      "sign in with",
+      "login with",
+      "connect with",
+      "authenticate",
+      "social login",
+      "social sign in"
+    ],
+    "optional": [
+      "sign in using",
+      "login using",
+      "authenticate with",
+      "connect account",
+      "authorize",
+      "grant access",
+      "redirect uri",
+      "callback url"
+    ],
+    "forbidden": [
+    ]
+  },
+  "logic": {
+    "min_required_matches": 2,
+    "min_total_score": 12
+  },
+  "scoring": {
+    "html_required": 6,
+    "html_optional": 2,
+    "text_required": 5,
+    "text_optional": 1,
+    "forbidden_penalty": -10
+  }
+}

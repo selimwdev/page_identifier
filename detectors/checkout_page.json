@@ -1,0 +1,117 @@
+{
+  "name": "checkout_page",
+  "html": {
+    "required": [
+      "form",
+      "input[type=text]",
+      "input[type=number]",
+      "input[type=tel]",
+      "input[name*=address]",
+      "input[id*=address]",
+      "input[name*=city]",
+      "input[id*=city]",
+      "input[name*=zip]",
+      "input[id*=zip]",
+      "input[name*=state]",
+      "input[id*=state]",
+      "input[name*=card]",
+      "input[id*=card]",
+      "input[name*=cvv]",
+      "input[id*=cvv]",
+      "input[name*=expiry]",
+      "input[id*=expiry]",
+      "button[type=submit]",
+      "input[type=submit]",
+      "div[class*=checkout]",
+      "div[class*=order-summary]",
+      "section[class*=checkout]",
+      "section[class*=order-summary]"
+    ],
+    "optional": [
+      "input[name*=email]",
+      "input[id*=email]",
+      "select[name*=country]",
+      "div[class*=billing]",
+      "div[class*=payment]",
+      "fieldset",
+      "label[for*=card]",
+      "label[for*=cvv]",
+      "label[for*=expiry]",
+      "label[for*=address]",
+      "h1",
+      "h2",
+      "h3",
+      "table",
+      "tr",
+      "td",
+      "th"
+    ],
+    "forbidden": [
+      "input[type=password]",
+      "form[action*=login]",
+      "form[action*=register]",
+      "div[class*=login]",
+      "section[class*=login]",
+      "div[class*=signup]",
+      "section[class*=signup]"
+    ]
+  },
+  "text": {
+    "required": [
+      "checkout",
+      "order summary",
+      "billing",
+      "shipping",
+      "payment",
+      "total",
+      "place order",
+      "submit order",
+      "card number",
+      "expiry",
+      "cvv",
+      "security code",
+      "name on card",
+      "email",
+      "phone number",
+      "address",
+      "city",
+      "zip",
+      "state",
+      "country"
+    ],
+    "optional": [
+      "paypal",
+      "stripe",
+      "visa",
+      "mastercard",
+      "american express",
+      "discount code",
+      "coupon code",
+      "shipping method",
+      "delivery",
+      "order details",
+      "order items",
+      "order total",
+      "continue to payment"
+    ],
+    "forbidden": [
+      "login",
+      "register",
+      "signup",
+      "forgot password",
+      "newsletter",
+      "contact"
+    ]
+  },
+  "logic": {
+    "min_required_matches": 4,
+    "min_total_score": 20
+  },
+  "scoring": {
+    "html_required": 6,
+    "html_optional": 2,
+    "text_required": 5,
+    "text_optional": 2,
+    "forbidden_penalty": -10
+  }
+}

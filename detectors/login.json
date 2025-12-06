@@ -1,0 +1,101 @@
+{
+  "name": "login",
+  "html": {
+    "required": [
+      "input[type=password]", 
+      "form[action*=login]",
+      "input[type=email]"
+    ],
+    "optional": [
+      "input[name*=user]",
+      "input[name*=username]",
+      "input[name*=login]",
+      "input[id*=user]",
+      "input[id*=login]",
+      "input[name*=email]",
+      "button[type=submit]",
+      "input[type=submit]",
+      "a[href*=forgot]",
+      "a[href*=reset]",
+      "label[for*=password]",
+      "label[for*=user]",
+      "label[for*=username]",
+      "div[class*=login]",
+      "section[class*=login]",
+      "fieldset"
+    ],
+    "forbidden": [
+      "form[action*=register]",
+      "form[action*=signup]",
+      "input[name*=signup]",
+      "input[name*=confirm]",
+      "input[name*=new]",
+      "button[name*=register]",
+      "a[href*=signup]",
+      "a[href*=register]",
+      "div[class*=register]",
+      "section[class*=register]"
+    ]
+  },
+  "text": {
+    "required": [
+      "login",
+      "log in",
+      "log-in",
+      "sign in",
+      "signin",
+      "sign-in",
+      "password",
+      "enter your password",
+      "username",
+      "user name",
+      "user",
+      "email",
+      "e-mail",
+      "mail"
+    ],
+    "optional": [
+      "forgot password",
+      "forgot your password",
+      "reset password",
+      "reset your password",
+      "account",
+      "user account",
+      "access",
+      "welcome back",
+      "authentication",
+      "auth",
+      "secure login",
+      "please login",
+      "verify",
+      "credentials",
+      "sign in to continue",
+      "enter credentials"
+    ],
+    "forbidden": [
+      "sign up",
+      "signup",
+      "sign-up",
+      "create account",
+      "register",
+      "new account",
+      "join now",
+      "get started",
+      "apply",
+      "create profile",
+      "start trial",
+      "create your account"
+    ]
+  },
+  "logic": {
+    "min_required_matches": 5,
+    "min_total_score": 25
+  },
+  "scoring": {
+    "html_required": 6,
+    "html_optional": 2,
+    "text_required": 5,
+    "text_optional": 1,
+    "forbidden_penalty": -10
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "name": "contact_form",
+  "html": {
+    "required": [
+      "form",
+      "input[type=text]",
+      "input[type=email]",
+      "textarea",
+      "button[type=submit]",
+      "input[type=submit]"
+    ],
+    "optional": [
+      "input[name*=name]",
+      "input[id*=name]",
+      "input[name*=full_name]",
+      "input[id*=full_name]",
+      "input[name*=subject]",
+      "input[id*=subject]",
+      "textarea[name*=message]",
+      "textarea[id*=message]",
+      "textarea[name*=comment]",
+      "textarea[id*=comment]",
+      "div[class*=contact]",
+      "section[class*=contact]",
+      "div[class*=form]",
+      "form[class*=contact]",
+      "form[id*=contact]",
+      "fieldset",
+      "label[for*=name]",
+      "label[for*=email]",
+      "label[for*=message]",
+      "label[for*=subject]",
+      "h1",
+      "h2"
+    ],
+    "forbidden": [
+      "input[name*=password]",
+      "input[type=password]",
+      "form[action*=login]",
+      "form[action*=register]"
+    ]
+  },
+  "text": {
+    "required": [
+      "contact us",
+      "get in touch",
+      "send us a message",
+      "drop us a line",
+      "leave a message",
+      "reach out",
+      "send message",
+      "your message",
+      "your name",
+      "your email",
+      "subject",
+      "message",
+      "write to us"
+    ],
+    "optional": [
+      "phone number",
+      "call us",
+      "email address",
+      "we will respond",
+      "contact form",
+      "send enquiry",
+      "send inquiry",
+      "write your message",
+      "your inquiry",
+      "feedback",
+      "customer support",
+      "support team"
+    ],
+    "forbidden": [
+      "forgot password"
+    ]
+  },
+  "logic": {
+    "min_required_matches": 2,
+    "min_total_score": 12
+  },
+  "scoring": {
+    "html_required": 6,
+    "html_optional": 3,
+    "text_required": 5,
+    "text_optional": 2,
+    "forbidden_penalty": -5
+  }
+}

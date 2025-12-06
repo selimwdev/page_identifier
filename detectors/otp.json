@@ -1,0 +1,84 @@
+{
+  "name": "otp_form",
+  "html": {
+    "required": [
+      "form",
+      "input[type=number]",
+      "input[type=text]",
+      "input[maxlength]",
+      "input[name*=otp i]",
+      "input[id*=otp i]",
+      "input[name*=code i]",
+      "input[id*=code i]",
+      "button[type=submit]",
+      "input[type=submit]"
+    ],
+    "optional": [
+      "input[name*=verification i]",
+      "input[id*=verification i]",
+      "input[name*=auth i]",
+      "input[id*=auth i]",
+      "div[class*=otp i]",
+      "div[class*=verification i]",
+      "section[class*=otp i]",
+      "section[class*=verification i]",
+      "label[for*=otp i]",
+      "label[for*=code i]",
+      "label[for*=verification i]",
+      "span[class*=otp i]",
+      "span[class*=code i]"
+    ],
+    "forbidden": [
+      "input[type=password]",
+      "form[action*=login]",
+      "form[action*=register]",
+      "div[class*=login]",
+      "section[class*=login]",
+      "div[class*=signup]",
+      "section[class*=signup]"
+    ]
+  },
+  "text": {
+    "required": [
+      "otp",
+      "code",
+      "verification",
+      "2fa",
+      "two-factor",
+      "auth code",
+      "security code",
+      "one-time",
+      "one time",
+      "sms code",
+      "email code",
+      "enter code"
+    ],
+    "optional": [
+      "verification code",
+      "authentication code",
+      "two factor authentication",
+      "multi factor",
+      "enter otp",
+      "sent to your phone",
+      "sent to your email",
+      "submit code"
+    ],
+    "forbidden": [
+      "forgot password",
+      "login",
+      "register",
+      "signup"
+    ]
+  },
+  "logic": {
+    "min_required_matches": 3,
+    "min_total_score": 15
+  },
+  "scoring": {
+    "html_required": 6,
+    "html_optional": 2,
+    "text_required": 5,
+    "text_optional": 2,
+    "forbidden_penalty": -10
+  }
+}

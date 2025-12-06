@@ -1,0 +1,91 @@
+{
+  "name": "file_upload_form",
+  "html": {
+    "required": [
+      "form",
+      "input[type=file]",
+      "button[type=submit]",
+      "input[type=submit]"
+    ],
+    "optional": [
+      "input[name*=file]",
+      "input[id*=file]",
+      "input[name*=upload]",
+      "input[id*=upload]",
+      "input[name*=document]",
+      "input[id*=document]",
+      "input[name*=attachment]",
+      "input[id*=attachment]",
+      "input[name*=image]",
+      "input[id*=image]",
+      "input[name*=photo]",
+      "input[id*=photo]",
+      "div[class*=upload]",
+      "div[class*=file-upload]",
+      "div[class*=attachment]",
+      "section[class*=upload]",
+      "section[class*=file-upload]",
+      "section[class*=attachment]",
+      "form[class*=upload]",
+      "form[class*=file-upload]",
+      "form[class*=attachment]",
+      "fieldset",
+      "label[for*=file]",
+      "label[for*=upload]",
+      "label[for*=document]",
+      "h1",
+      "h2"
+    ],
+    "forbidden": [
+      "input[type=password]",
+      "form[action*=login]",
+      "form[action*=register]"
+    ]
+  },
+  "text": {
+    "required": [
+      "upload",
+      "choose file",
+      "select file",
+      "attach file",
+      "upload document",
+      "upload file",
+      "drag and drop",
+      "browse file",
+      "submit file",
+      "select document",
+      "choose document"
+    ],
+    "optional": [
+      "attach document",
+      "upload attachment",
+      "drag files here",
+      "select image",
+      "choose photo",
+      "upload photo",
+      "submit attachment",
+      "add file",
+      "add attachment",
+      "upload now",
+      "send file"
+    ],
+    "forbidden": [
+      "login",
+      "sign in",
+      "register",
+      "signup",
+      "forgot password"
+    ]
+  },
+  "logic": {
+    "min_required_matches": 2,
+    "min_total_score": 12
+  },
+  "scoring": {
+    "html_required": 6,
+    "html_optional": 3,
+    "text_required": 5,
+    "text_optional": 2,
+    "forbidden_penalty": -5
+  }
+}

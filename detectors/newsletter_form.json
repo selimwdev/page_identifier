@@ -1,0 +1,84 @@
+{
+  "name": "newsletter_form",
+  "html": {
+    "required": [
+      "input[type=email]",
+      "button[type=submit]",
+      "input[name*=email]",
+      "input[id*=email]"
+    ],
+    "optional": [
+      "label[for*=email]",
+      "div[class*=newsletter i]",
+      "form[action*=subscribe]",
+      "form[id*=newsletter]",
+      "form[class*=newsletter]",
+      "button[class*=subscribe i]",
+      "input[placeholder*=email i]",
+      "input[placeholder*=subscribe i]",
+      "input[aria-label*=email i]",
+      "input[aria-label*=subscribe i]"
+    ],
+    "forbidden": [
+      "input[name*=password]",
+      "input[type=password]",
+      "form[action*=login]",
+      "form[action*=register]",
+      "div[class*=login]",
+      "section[class*=login]",
+      "form[action*='forgot']",
+      "form[action*='forget']",
+      "form[action*='reset']",
+      "form[action*='recover']",
+      "div[class*=forgot]",
+      "div[class*=reset]",
+      "div[class*=recover]",
+      "section[class*=forgot]",
+      "section[class*=reset]",
+      "section[class*=recover]",
+      "[data-testid*=forgot-password]",
+      "[data-testid*=reset-password]",
+      "[data-testid*=recover-password]"
+    ]
+  },
+  "text": {
+    "required": [
+      "subscribe",
+      "newsletter",
+      "sign up for updates",
+      "get our newsletter",
+      "join our mailing list",
+      "stay updated"
+    ],
+    "optional": [
+      "enter your email",
+      "your email",
+      "email address",
+      "subscribe now",
+      "join now",
+      "signup for news"
+    ],
+    "forbidden": [
+      "login",
+      "sign in",
+      "register",
+      "forgot password",
+      "reset password",
+      "recover password",
+      "password recovery",
+      "security code",
+      "verification code"
+    ]
+  },
+  "logic": {
+    "min_required_matches": 2,
+    "min_total_score": 12
+  },
+  "scoring": {
+    "html_required": 6,
+    "html_optional": 2,
+    "text_required": 5,
+    "text_optional": 1,
+    "forbidden_penalty": -10
+  }
+}
