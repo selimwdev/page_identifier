@@ -4,19 +4,19 @@
     "required": [
       "form",
       "input[type=email]",
-      "input[type=password]",
-      "input[type=text]"
+      "input[type=password]"
     ],
     "optional": [
       "input[name*=username]",
       "input[id*=username]",
+      "input[name*=register]",
+      "input[id*=register]",
       "input[name*=signup]",
       "input[id*=signup]",
       "button[type=submit]",
       "input[type=submit]",
       "div[class*=register]",
       "section[class*=register]",
-      "fieldset",
       "label[for*=email]",
       "label[for*=user]",
       "label[for*=password]",
@@ -28,8 +28,12 @@
     "forbidden": [
       "form[action*=login]",
       "input[name*=login]",
+      "input[id*=login]",
+      "button[name*=login]",
       "div[class*=login]",
-      "section[class*=login]"
+      "section[class*=login]",
+      "h1:contains('login')",
+      "h2:contains('login')"
     ]
   },
   "text": {
@@ -43,36 +47,40 @@
       "register",
       "join now",
       "start free trial",
-      "get started",
-      "email",
-      "username",
-      "password",
-      "enter password"
+      "get started"
     ],
     "optional": [
       "confirm password",
       "password confirmation",
-      "account",
-      "welcome",
-      "start your journey",
       "create profile",
-      "apply now",
-      "start trial",
       "begin registration",
-      "join us",
-      "register now"
+      "start your journey",
+      "register now",
+      "apply now",
+      "account",
+      "username",
+      "email",
+      "password",
+      "enter password"
     ],
-    "forbidden": []
+    "forbidden": [
+      "login",
+      "log in",
+      "sign in",
+      "signin",
+      "sign-in",
+      "welcome back"
+    ]
   },
   "logic": {
     "min_required_matches": 2,
-    "min_total_score": 20
+    "min_total_score": 22
   },
   "scoring": {
     "html_required": 8,
     "html_optional": 4,
-    "text_required": 6,
+    "text_required": 7,
     "text_optional": 2,
-    "forbidden_penalty": -10
+    "forbidden_penalty": -12
   }
 }
